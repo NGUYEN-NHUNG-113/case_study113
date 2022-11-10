@@ -1,0 +1,137 @@
+@import 'partials/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+body {
+    font-size: 62.5%;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+
+.banner-area {
+    background-image: url("/assets/images/uploads/products/banner-bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10000;
+
+    .banner-content{
+        h1 {
+            margin-top: 10rem;
+            font-size: larger;
+        }
+    
+    }
+
+
+.features-inner {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    padding: 40px 0;
+
+    &__text {
+        border-left: solid 0.1px gainsboro;
+    }
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 100px 350px;
+    grid-gap: 30px;
+
+    &__items {
+        border-radius: 10px;
+        overflow: hidden;
+
+        &:first-child {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        &:nth-child(2) {
+            grid-row: 1/3;
+
+        }
+
+        &:nth-child(3) {
+            grid-row: 1/3;
+
+        }
+
+        &:nth-child(4) {
+            grid-row: 2/4;
+
+        }
+
+        &:nth-child(5) {
+            grid-row: 2/4;
+
+        }
+
+        &:last-child {
+            grid-column: 3/5;
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+}
+
+
+
+
+.product_detail {
+    .btn {
+        z-index: 0;
+    }
+
+    // span{
+    // position: relative;
+    // height: 30px;
+    // width: 30px;
+    // line-height: 30px;
+    // text-align: center;
+    // background: #828bb2;
+    // border-radius: 50%;
+    // display: inline-block;
+    // color: #fff;
+    // transition: all 0.3s ease 0s;
+    // z-index: 1;
+
+
+}
+
+
+
+
+
+.exclusive-deal-area {
+    .exclusive-left {
+        background: url("/assets/images/uploads/products/exclusive.jpg") center no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 275px 0;
+    }}
+
+
+
+
+
+
